@@ -1,11 +1,733 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Assignment</title>
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
     <script src="App.js"></script>
 </head>
+
 <body>
+    <div class="container-fluid">
+        <h1>JAVASCRIPT PRACTICE ASSIGNMENT</h1>
+        <button data-toggle="collapse" data-target="#chap1">
+            <h3>Chapter#1 Alerts</h3>
+        </button>
+        <div class="collapse" id="chap1">
+            <button>
+                <h3>Question & Answer</h3>
+            </button>
+            <button data-toggle="collapse" data-target="#ques1"><b>Question#1</b></button>
+            <div class="collapse" id="ques1">
+                <p>1) Write a script to greet your website visitor using JS alert box</p>
+                <p>1) Answer= alert("Hello World!");</p>
+                <button onclick="c1ans1()">For Alert Click Here</button>
+            </div>
+            <button data-toggle="collapse" data-target="#ques2"><b>Question#2</b></button>
+            <div class="collapse" id="ques2">
+                <p>2) Write a script to display Error! Please enter a valid password message on your webpage</p>
+                <p>2) Answer= alert("Error! Please enter a valid password");</p>
+                <button onclick="c1ans2()">For Alert Click Here</button>
+            </div>
+            <button data-toggle="collapse" data-target="#ques3"><b>Question#3</b></button>
+            <div class="collapse" id="ques3">
+                <p>3) Write a script to display Welcome to JS Land Happy Coding! message on your web
+                    page: (Hint : Use line break)
+                </p>
+                <p>3) Answer= alert("Welcome to JS Land\nHappy Coding!");</p>
+                <button onclick="c1ans3()">For Alert Click Here</button>
+            </div>
+            <button data-toggle="collapse" data-target="#ques4"><b>Question#4</b></button>
+            <div class="collapse" id="ques4">
+                <p>4) Write a script to display following messages in sequence</p>
+                <p>4_A) Answer= alert("Welcome to JS Land");</p>
+                <button onclick="c1ans4_a()">For Alert Click Here</button>
+                <p>4_b) Answer= alert("Happy Coding!\nPrevent this page from creating additional dialogs.");</p>
+                <button onclick="c1ans4_b()">For Alert Click Here</button>
+            </div>
+            <button data-toggle="collapse" data-target="#ques5"><b>Question#5</b></button>
+            <div class="collapse" id="ques5">
+                <p>5) Generate the following message through browser’s developer console:</p>
+                <p>5) Answer= console.log("Hello..I can run JS through my web browser's console.")</p>
+            </div>
+        </div>
+        <button data-toggle="collapse" data-target="#chap2">
+            <h3>Chapter#2 Variables For Strings</h3>
+        </button>
+        <div class="collapse" id="chap2">
+            <button>
+                <h3>Question & Answer</h3>
+            </button>
+            <button data-toggle="collapse" data-target="#c2ques1"><b>Question#1</b></button>
+            <div class="collapse" id="c2ques1">
+                <p>1) Declare a variable called username</p>
+                <p>1) Answer= var username</p>
+            </div>
+            <button data-toggle="collapse" data-target="#c2ques2"><b>Question#2</b></button>
+            <div class="collapse" id="c2ques2">
+                <p>2) Declare a variable called myName & assign to it a string
+                    that represents your Full Name</p>
+                <p>2) Answer= var myname = ("Muhammad Moiz");</p>
+            </div>
+            <button data-toggle="collapse" data-target="#c2ques3"><b>Question#3</b></button>
+            <div class="collapse" id="c2ques3">
+                <p>3) Write script to </p>
+                <p>a) Declare a JS variable, titled message.</p>
+                <p>b) Assign “Hello World” to variable message</p>
+                <p>c) Display the message in alert box.</p>
+                <p>3) Answer= var message = ("Hello World");</p>
+                <p>alert (message);</p>
+                <button onclick="c2ans3()">For Alert Click Here</button>
+            </div>
+            <button data-toggle="collapse" data-target="#c2ques4"><b>Question#4</b></button>
+            <div class="collapse" id="c2ques4">
+                <p>4) Write a script to save student’s bio data in JS variables and
+                    show the data in alert boxes</p>
+                <p>4a) Answer= var student = ("Student Name: M.Moiz");</p>
+                <p>alert (student);</p>
+                <button onclick="c2ans4_a()">For Alert Click Here</button>
+                <p>4b) Answer= var studentAge = ("Student Age: 20 years Old");</p>
+                <p>alert (studentAge);</p>
+                <button onclick="c2ans4_b()">For Alert Click Here</button>
+                <p>4c) Answer= var certification = ("Certification: Certified Mobile Application Development");</p>
+                <p>alert (certification);</p>
+                <button onclick="c2ans4_c()">For Alert Click Here</button>
+            </div>
+            <button data-toggle="collapse" data-target="#c2ques5"><b>Question#5</b></button>
+            <div class="collapse" id="c2ques5">
+                <p>5) Write a script to display the following alert using one JS
+                    variable:
+                </p>
+                <p>5) Answer= var pizza = ("PIZZA\nPIZZ\nPIZ\nPI\nP");</p>
+                <p>alert(pizza);</p>
+                <button onclick="c2ans5()">For Alert Click Here</button>
+            </div>
+            <button data-toggle="collapse" data-target="#c2ques6"><b>Question#6</b></button>
+            <div class="collapse" id="c2ques6">
+                <p>6) Declare a variable called email and assign to it a string that
+                    represents your Email Address(e.g. example@example.com).
+                    Show the blow mentioned message in an alert box.(Hint: use
+                    string concatenation)
+                </p>
+                <p>6) Answer=
+                    var email = ("My Email Address is ");<br>
+                    var eaddress = ("abdulmoiz328@gmail.com");<br>
+                    var emailaddress = (email + eaddress);<br>
+                    alert(emailaddress);</p>
+                <button onclick="c2ans6()">For Alert Click Here</button>
+            </div>
+            <button data-toggle="collapse" data-target="#c2ques7"><b>Question#7</b></button>
+            <div class="collapse" id="c2ques7">
+                <p>7)
+                    Declare a variable called book & give it the value “A
+                    smarter way to learn JavaScript”. Display the following
+                    message in an alert box:
+                </p>
+                <p>7) Answer= var book = ("A Smarter way to learn JavaScript");<br>
+                    alert("I am trying to learn from the book " + book2);
+                </p>
+                <button onclick="c2ans7()">For Alert Click Here</button>
+            </div>
+            <button data-toggle="collapse" data-target="#c2ques8"><b>Question#8</b></button>
+            <div class="collapse" id="c2ques8">
+                <p>8) Write a script to display this in browser through JS</p>
+                <p>8) Answer= var doc = ("Yah! I can write HTML content through JavaScript");</p>
+                <p>
+                    document.write(doc);
+                </p>
+                <button onclick="c2ans8()">For Display Click Here</button>
+            </div>
+            <button data-toggle="collapse" data-target="#c2ques9"><b>Question#9</b></button>
+            <div class="collapse" id="c2ques9">
+                <p>9) Store following string in a variable and show in alert and
+                    browser through JS
+                </p>
+                <p>9) Answer=
+                    var design = ("“▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬”");<br>
+                    document.write(design);<br>
+                    alert(design);
+                </p>
+                <button onclick="c2ans9_a()">For Display Click Here</button>
+                <button onclick="c2ans9_b()">For Alert Click Here</button>
+            </div>
+        </div>
+        <button data-toggle="collapse" data-target="#chap3">
+            <h3>Chapter#3 Variables For Numbers</h3>
+        </button>
+        <div class="collapse" id="chap3">
+            <button>
+                <h3>Question & Answer</h3>
+            </button>
+            <button data-toggle="collapse" data-target="#c3ques1"><b>Question#1</b></button>
+            <div class="collapse" id="c3ques1">
+                <p>1) Declare a variable called age & assign to it your age. Show
+                    your age in an alert box.
+                </p>
+                <p>1) Answer=
+                    var age1 = ("I am 20 years old");<br>
+                    alert(age1);</p>
+                <button onclick="c3ans1()">For Alert Click Here</button>
+            </div>
+            <button data-toggle="collapse" data-target="#c3ques2"><b>Question#2</b></button>
+            <div class="collapse" id="c3ques2">
+                <p>2) Declare & initialize a variable to keep track of how many
+                    times a visitor has visited a web page. Show his/her
+                    number of visits on your web page. For example: “You
+                    have visited this site N times”.
+                </p>
+                <p>2) Answer= var visit = 14;<br>
+                    alert("You have visited this site " + visit + " times");
+                </p>
+                <button onclick="c3ans2()">For Alert Click Here</button>
+            </div>
+            <button data-toggle="collapse" data-target="#c3ques3"><b>Question#3</b></button>
+            <div class="collapse" id="c3ques3">
+                <p>3) Declare a variable called birthYear & assign to it your
+                    birth year. Show the following message in your browser:
+                </p>
+                <p>3) Answer= var birthyear = 1999;<br>
+                    document.write("My birth year is " + birthyear);
+                </p>
+                <button onclick="c3ans3()">For Alert Click Here</button>
+            </div>
+            <button data-toggle="collapse" data-target="#c3ques4"><b>Question#4</b></button>
+            <div class="collapse" id="c3ques4">
+                <p>4) A visitor visits an online clothing store
+                    www.xyzClothing.com . Write a script to store in variables
+                    the following information:
+                    a. Visitor’s name
+                    b. Product title
+                    c. Quantity i.e. how many products a visitor wants to
+                    order
+                    Show the following message in your browser: “John
+                    Doe ordered 5 T-shirt(s) on XYZ Clothing store”.
+                </p>
+                <p>4) Answer=
+                    var visitorname = ("M.Moiz ");<br>
+                    var producttitle = (" T-shirt(s) ");<br>
+                    var quantity = (5 );<br>
+                    document.write(visitorname + "Ordered " + quantity + producttitle + "on Fashion.online store." );
+                </p>
+                <button onclick="c3ans4()">For Display Click Here</button>
+            </div>
+        </div>
+        <button data-toggle="collapse" data-target="#chap4">
+            <h3>Chapter#4 Variable Names Legal and Illegal</h3>
+        </button>
+        <div class="collapse" id="chap4">
+            <button>
+                <h3>Question & Answer</h3>
+            </button>
+            <button data-toggle="collapse" data-target="#c4ques1"><b>Question#1</b></button>
+            <div class="collapse" id="c4ques1">
+                <p>1) Declare 3 variables in one statement.</p>
+                <p>1) Answer= var variable_1 = 1,<br>
+                    variable_2 = 2,<br>
+                    variable_3 = 3;</p>
+            </div>
+            <button data-toggle="collapse" data-target="#c4ques2"><b>Question#2</b></button>
+            <div class="collapse" id="c4ques2">
+                <p>2) Declare 5 legal & 5 illegal variable names.</p>
+                <p>2) Answer=
+                    var legal = ("moiz,$moiz,_moiz,moiz1,moiz_1");<br>
+                    var illegal = ("1moiz,%moiz,moiz moiz,@moiz,!moiz");
+                </p>
+            </div>
+            <button data-toggle="collapse" data-target="#c4ques3"><b>Question#3</b></button>
+            <div class="collapse" id="c4ques3">
+                <p>3) Display this in your browser
+                    <br>
+                    a) A heading stating “Rules for naming JS variables”
+                    <br>
+                    b) Variable names can only contain ______, ______,
+                    ______ and ______.
+                    For example $my_1stVariable
+                    <br>
+                    c) Variables must begin with a ______, ______ or
+                    _____. For example $name, _name or name
+                    <br>
+                    d) Variable names are case _________
+                    <br>
+                    e) Variable names should not be JS _________
+                </p>
+                <p>3) Answer=
+                    document.write("Rules for naming JS variables");<br>
+                    document.write("Variable names can only contain ,letters,numbers,underscore and dollar sign. For
+                    example $my_1stVariable");<br>
+                    document.write("Variables must begin with a letter,Dollar sign,underscore. For example $name, _name
+                    or name");<br>
+                    document.write("Variable name are case Sensitive");<br>
+                    document.write("Variable names should not be JS Keywords");</p>
+                <button onclick="c4ans3()">For Display Click Here</button>
+            </div>
+        </div>
+        <button data-toggle="collapse" data-target="#chap5">
+            <h3>Chapter#5 Math Expressions: Familiar Operators.</h3>
+        </button>
+        <div class="collapse" id="chap5">
+            <button>
+                <h3>Question & Answer</h3>
+            </button>
+            <button data-toggle="collapse" data-target="#c5ques1"><b>Question#1</b></button>
+            <div class="collapse" id="c5ques1">
+                <p>1) Write a program that take two numbers & add them in a
+                    new variable. Show the result in your browser.
+                </p>
+                <p>1) Answer=
+                    var num1 = +prompt("Addition Number 1");<br>
+                    var num2 = +prompt("Addition Number 2");<br>
+                    var num3 = num1 + num2;<br>
+                    document.write("Sum of " + num1 + "and " + num2 + "is " + num3);
+                </p>
+                <button onclick="c5ans1()">For Alert Click Here</button>
+            </div>
+            <button data-toggle="collapse" data-target="#c5ques2"><b>Question#2</b></button>
+            <div class="collapse" id="c5ques2">
+                <p>2) Repeat task1 for subtraction, multiplication, division &
+                    modulus
+                </p>
+                <p>2.A) Answer=
+                    var num4 = +prompt("Subtraction Number 1");<br>
+                    var num5 = +prompt("Subtraction Number 2");<br>
+                    var num6 = num4 - num5;<br>
+                    document.write("Difference of" + num4 + "and " + num5 + "is " + num6); </p>
+                <button onclick="c5ans2_a()">For Alert Click Here</button>
+                <p>2.B) Answer=
+                    var num7 = +prompt("Multiplication Number 1");<br>
+                    var num8 = +prompt("Multiplication Number 2");<br>
+                    var num9 = num7 * num8;<br>
+                    document.write("Product of " + num7 + " and " + num8 + " is " + num9);
+                </p>
+                <button onclick="c5ans2_b()">For Alert Click Here</button>
+                <p>2.C) Answer=
+                    var num10 = +prompt("Division Number 1");<br>
+                    var num11 = +prompt("Division Number 2");<br>
+                    var num12 = num10 / num11;<br>
+                    document.write("Quotient of " + num10 + "and " + num11 + "is " + num12);
+                </p>
+                <button onclick="c5ans2_c()">For Alert Click Here</button>
+                <p>2.D) Answer=
+                    var num13 = +prompt("Modulus Number 1");<br>
+                    var num14 = +prompt("Modulus Number 2");<br>
+                    var num15 = num13 % num14;<br>
+                    document.write("Reminder of " + num13 + "and " + num14 + "is " + num15);
+                </p>
+                <button onclick="c5ans2_d()">For Alert Click Here</button>
+            </div>
+            <button data-toggle="collapse" data-target="#c5ques3"><b>Question#3</b></button>
+            <div class="collapse" id="c5ques3">
+                <p>3) Do the following using JS Mathematic Expressions</p>
+                <ul>
+                    <li>a. Declare a variable.</li>
+                    <li>b. Show the value of variable in your browser like “Value after variable declaration is: ??”.
+                    </li>
+                    <li>c. Initialize the variable with some number.</li>
+                    <li>d. Show the value of variable in your browser like “Initial value: 5”.</li>
+                    <li>e. Increment the variable.</li>
+                    <li>f. Show the value of variable in your browser like “Value
+                        after increment is: 6”.
+                    </li>
+                    <li>g. Add 7 to the variable.</li>
+                    <li>h. Show the value of variable in your browser like “Value
+                        after addition is: 13”.
+                    </li>
+                    <li>i. Decrement the variable.</li>
+                    <li>j. Show the value of variable in your browser like “Value
+                        after decrement is: 12”.
+                    </li>
+                    <li>k. Show the remainder after dividing the variable’s value by 3.</li>
+                    <li>l. Output : “The remainder is : 0”.</li>
+                </ul>
+                <p>3) Answer= var undef_ined = ("Value after variable declaration is undefined");</p>
+                <ul>
+                    <li>document.write(undef_ined);</li>
+                    <li>var value_1 = 5;</li>
+                    <li>document.write("Initial value: " + value_1);</li>
+                    <li>var increa_ment1 = (++value_1);</li>
+                    <li>document.write("Value after increament is: " + increa_ment1);</li>
+                    <li>var add_1 = 7;</li>
+                    <li>var add_2 = (increa_ment1 + add_1);</li>
+                    <li>document.write("Value after addition is: " + add_2);</li>
+                    <li>var decrea_ment = (--add_2);</li>
+                    <li>document.write("Value after decreament is: " + decrea_ment);</li>
+                    <li>var divi_de = (decrea_ment % 3);</li>
+                    <li>document.write("The reminder is: " + divi_de);</li>
+                </ul>
+                <button onclick="c5ans3()">For Display Click Here</button>
+            </div>
+            <button data-toggle="collapse" data-target="#c5ques4"><b>Question#4</b></button>
+            <div class="collapse" id="c5ques4">
+                <p>4) Cost of one movie ticket is 600 PKR. Write a script to store ticket price in
+                    a variable & calculate the cost of buying 5 ticketsto a movie. Example output:</p>
+                <p>4) Answer= var movie_ticket = 600;</p>
+                <ul>
+                    <li>var quantity_1 = 5;</li>
+                    <li>var total = 600 * 5;</li>
+                    <li>document.write("Total cost to buy " + quantity_1 + " tickets to a movie is " + total + "PKR");
+                    </li>
+                </ul>
+                <button onclick="c5ans4()">For Display Click Here</button>
+            </div>
+            <button data-toggle="collapse" data-target="#c5ques5"><b>Question#5</b></button>
+            <div class="collapse" id="c5ques5">
+                <p>5) Write a script to display multiplication table of any number in your browser.</p>
+                <p>5) Answer= </p>
+                <ul>
+                    <li>var table = ("Table of 4");</li>
+                    <li>document.write(table);</li>
+                    <li>var table_value = 4;</li>
+                    <li>var table_1 = table_value * 1;</li>
+                    <li>document.write(table_value + " x" + " 1" + " = " + table_1);</li>
+                    <li>var table_2 = table_value * 2;</li>
+                    <li>document.write(table_value + " x" + " 2" + " = " + table_2);</li>
+                    <li>var table_3 = table_value * 3;</li>
+                    <li>document.write(table_value + " x" + " 3" + " = " + table_3);</li>
+                    <li>var table_4 = table_value * 4;</li>
+                    <li>document.write(table_value + " x" + " 4" + " = " + table_4);</li>
+                    <li>var table_5 = table_value * 5;</li>
+                    <li>document.write(table_value + " x" + " 5" + " = " + table_5);</li>
+                    <li>var table_6 = table_value * 6;</li>
+                    <li>document.write(table_value + " x" + " 6" + " = " + table_6);</li>
+                    <li>var table_7 = table_value * 7;</li>
+                    <li>document.write(table_value + " x" + " 7" + " = " + table_7);</li>
+                    <li>var table_8 = table_value * 8;</li>
+                    <li>document.write(table_value + " x" + " 8" + " = " + table_8);</li>
+                    <li>var table_9 = table_value * 9;</li>
+                    <li>document.write(table_value + " x" + " 9" + " = " + table_9);</li>
+                    <li>var table_10 = table_value * 10;</li>
+                    <li>document.write(table_value + " x" + " 10" + " = " + table_10);</li>
+                </ul>
+                <button onclick="c5ans5()">For Display Click Here</button>
+            </div>
+            <button data-toggle="collapse" data-target="#c5ques6"><b>Question#6</b></button>
+            <div class="collapse" id="c5ques6">
+                <p>6) The Temperature Converter: It’s hot out! Let’s make a converter based on the steps here.</p>
+                <ul>
+                    <li>a. Store a Celsius temperature into a variable.</li>
+                    <li>b. Convert it to Fahrenheit & output “NNoC is NNoF”.</li>
+                    <li>c. Now store a Fahrenheit temperature into a variable.</li>
+                    <li>d. Convert it to Celsius & output “NNoF is NNoC”.</li>
+                </ul>
+                <p>6) Answer= </p>
+                <ul>
+                    <li>var cTemp = 25;</li>
+                    <li>var cToFahr = cTemp * 9 / 5 + 32;</li>
+                    <li>var message_1 = cTemp + "\xB0C is " + cToFahr + " \xB0F.";</li>
+                    <li>document.write(message_1);</li>
+                    <li>var fTemp = 70;</li>
+                    <li>var fToCel = (fTemp - 32) * 5 / 9;</li>
+                    <li>var message_2 = fTemp + '\xB0F is ' + fToCel + '\xB0C.';</li>
+                    <li>document.write(message_2);</li>
+                </ul>
+                <button onclick="c5ans6()">For Display Click Here</button>
+            </div>
+            <button data-toggle="collapse" data-target="#c5ques7"><b>Question#7</b></button>
+            <div class="collapse" id="c5ques7">
+                <p>7) Write a program to implement checkout process of a
+                    shopping cart system for an e-commerce website. Store
+                    the following in variables
+                </p>
+                <ul>
+                    <li>a. Price of item 1</li>
+                    <li>b. Price of item 2</li>
+                    <li>c. Ordered quantity of item 1</li>
+                    <li>d. Ordered Quantity of item 2</li>
+                    <li>e. Shipping charges</li>
+                </ul>
+                <p>Compute the total cost & show the receipt in your browser.</p>
+                <p>7) Answer= </p>
+                <ul>
+                    <li>var item_1 = 650;</li>
+                    <li>var item_2 = 100;</li>
+                    <li>var quantity_2 = 3;</li>
+                    <li>var quantity_3 = 7;</li>
+                    <li>var shipping = 100;</li>
+                    <li>var item_total1 = item_1 * quantity_2;</li>
+                    <li>var item_total2 = item_2 * quantity_3;</li>
+                    <li>var item_total3 = item_total1 + item_total2 + shipping;</li>
+                    <li>document.write("Price of item 1 is " + item_1);</li>
+                    <li>document.write("Quantity of item 1 is " + quantity_2);</li>
+                    <li>document.write("Price of item 2 is " + item_2);</li>
+                    <li>document.write("Quantity of item 2 is " + quantity_3);</li>
+                    <li>document.write("Shipping Charges " + shipping);</li>
+                    <li>document.write("Total cost of your order is " + item_total3);</li>
+                </ul>
+                <button onclick="c5ans7()">For Display Click Here</button>
+            </div>
+            <button data-toggle="collapse" data-target="#c5ques8"><b>Question#8</b></button>
+            <div class="collapse" id="c5ques8">
+                <p>8) Store total marks & marks obtained by a student in 2
+                    variables. Compute the percentage & show the result in
+                    your browser
+                </p>
+                <p>8) Answer= </p>
+                <ul>
+                    <li>var marks_1 = 804;</li>
+                    <li>var marks_2 = 980;</li>
+                    <li>var percentage = marks_1 * 100;</li>
+                    <li>var percentage_2 = percentage / marks_2;</li>
+                    <li>document.write("Marks Sheet");</li>
+                    <li>document.write("Total Marks: " + marks_2);</li>
+                    <li>document.write("Marks Obtained: " + marks_1);</li>
+                    <li>document.write("Percentage: " + percentage_2 + "%");</li>
+                </ul>
+                <button onclick="c5ans8()">For Display Click Here</button>
+            </div>
+            <button data-toggle="collapse" data-target="#c5ques9"><b>Question#9</b></button>
+            <div class="collapse" id="c5ques9">
+                <p>9) Assume we have 10 US dollars & 25 Saudi Riyals. Write a
+                    script to convert the total currency to Pakistani Rupees.
+                    Perform all calculations in a single expression.
+                </p>
+                <p>
+                    (Exchange rates : 1 US Dollar = 104.80 Pakistani Rupee
+                    and 1 Saudi Riyal = 28 Pakistani Rupee)
+                </p>
+                <p>9) Answer= </p>
+                <ul>
+                    <li>var dollar = 10;</li>
+                    <li>var riyal = 25;</li>
+                    <li>var rupee_in_dollar = 104.80;</li>
+                    <li>var rupee_in_riyal = 28;</li>
+                    <li>var convert_Total = (dollar * rupee_in_dollar) + riyal * rupee_in_riyal;</li>
+                    <li>document.write("Currency in PKR");</li>
+                    <li>document.write("Total currrency in PKR: " + convert_Total);</li>
+                </ul>
+                <button onclick="c5ans9()">For Display Click Here</button>
+            </div>
+            <button data-toggle="collapse" data-target="#c5ques10"><b>Question#10</b></button>
+            <div class="collapse" id="c5ques10">
+                <p>10) Write a program to initialize a variable with some
+                    number and do arithmetic in following sequence:
+                </p>
+                <ul>
+                    <li>a. Add 5</li>
+                    <li>b. Multiply by 10</li>
+                    <li>c. Divide the result by 2</li>
+                </ul>
+                <p>Perform all calculations in a single expression</p>
+                <p>10) Answer= var Initial_2 = (5 * 10) / 2;</p>
+            </div>
+            <button data-toggle="collapse" data-target="#c5ques11"><b>Question#11</b></button>
+            <div class="collapse" id="c5ques11">
+                <p>11) The Age Calculator: Forgot how old someone is?
+                    Calculate it!
+                </p>
+                <ul>
+                    <li>a. Store the current year in a variable.</li>
+                    <li>b. Store their birth year in a variable.</li>
+                    <li>c. Calculate their 2 possible ages based on the stored values.</li>
+                </ul>
+                <p>
+                    Output them to the screen like so: “They are either NN or NN
+                    years old”.
+                </p>
+                <p>11) Answer= </p>
+                <ul>
+                    <li>var current_year = 2020;</li>
+                    <li>var birth_year = 1999;</li>
+                    <li>var age_2 = current_year - birth_year;</li>
+                    <li>document.write("Age Calculator");</li>
+                    <li>document.write("Current Year: " + current_year);</li>
+                    <li>document.write("Birth Year: " + birth_year);</li>
+                    <li>document.write("Your Age is: " + age_2);</li>
+                </ul>
+                <button onclick="c5ans11()">For Display Click Here</button>
+            </div>
+            <button data-toggle="collapse" data-target="#c5ques12"><b>Question#12</b></button>
+            <div class="collapse" id="c5ques12">
+                <p>12) The Geometrizer: Calculate properties of a circle.</p>
+                <ul>
+                    <li>a. Store a radius into a variable.</li>
+                    <li>b. Calculate the circumference based on the radius, and
+                        output “The circumference is NN”.
+                        (Hint : Circumference of a circle = 2 π r , π = 3.142)
+                        Calculate the area based on the radius, and output “The
+                        area is NN”. (Hint : Area of a circle = π r2, π = 3.142)
+                    </li>
+                </ul>
+                <p>12) Answer= </p>
+                <ul>
+                    <li>var radius = 20;</li>
+                    <li>var cir_cum = radius * 2 * Math.PI;</li>
+                    <li>var are_a = radius * radius * Math.P_I;</li>
+                    <li>document.write("The Geometrizer");</li>
+                    <li>document.write("Radius of a circle: " + radius);</li>
+                    <li>document.write("The circumference is: " + cir_cum);</li>
+                    <li>document.write("The area is: " + are_a);</li>
+                </ul>
+                <button onclick="c5ans12()">For Display Click Here</button>
+            </div>
+            <button data-toggle="collapse" data-target="#c5ques13"><b>Question#13</b></button>
+            <div class="collapse" id="c5ques13">
+                <p>13) The Lifetime Supply Calculator: Ever wonder how
+                    much a “lifetime supply” of your favorite snack is?
+                    Wonder no more.
+                </p>
+                <ul>
+                    <li>a. Store your favorite snack into a variable</li>
+                    <li>b. Store your current age into a variable.</li>
+                    <li>c. Store a maximum age into a variable.</li>
+                    <li>d. Store an estimated amount per day (as a number).</li>
+                    <li>e. Calculate how many would you eat total for the rest of your life.</li>
+                </ul>
+                <p> Output the result to the screen like so: “You will need
+                    NNNN to last you until the ripe old age of NN”.
+                </p>
+                <p>13) Answer= </p>
+                <ul>
+                    <li>var fav_snack = ("chocolate chip");</li>
+                    <li>var current_age = 15;</li>
+                    <li>var max_age = 65;</li>
+                    <li>var daily_eat = 3;</li>
+                    <li>var age_rem = max_age - current_age;</li>
+                    <li>var life_eat = daily_eat * 365;</li>
+                    <li>var sub_total = age_rem * life_eat;</li>
+                    <li>document.write("The lifetime supply calculator");</li>
+                    <li>document.write("Favourite Snack: " + fav_snack);</li>
+                    <li>document.write("Current Age: " + current_age);</li>
+                    <li>document.write("Estimated Maximum Age: " + max_age);</li>
+                    <li>document.write("Amount of snack per day: " + daily_eat);</li>
+                    <li>document.write("You will need " + sub_total + fav_snack + " to last you untill the ripe old age
+                        of " + max_age);
+                    </li>
+                </ul>
+                <button onclick="c5ans13()">For Display Click Here</button>
+            </div>
+        </div>
+        <button data-toggle="collapse" data-target="#chap6_9">
+            <h3>Chapter#6 to 9</h3>
+        </button>
+        <div class="collapse" id="chap6_9">
+            <button>
+                <h3>Question & Answer</h3>
+            </button>
+            <button data-toggle="collapse" data-target="#c6_9ques1"><b>Question#1</b></button>
+            <div class="collapse" id="c6_9ques1">
+                <p>1) Write a program to take a number in a variable, do the
+                    required arithmetic to display the following result in your browser:
+                </p>
+                <p>1) Answer= </p>
+                <ul>
+                    <li>var a_value = +prompt();</li>
+                    <li>document.write("Result:" + "The value of a is: " + a_value);</li>
+                    <li>var increament_4 = ++a_value;</li>
+                    <li>document.write("The value of ++a is: " + increament_4 + "The value of a is: " +
+                        increament_4);
+                    </li>
+                    <li>var increament_5 = increament_4++;</li>
+                    <li>document.write("The value of a++ is: " + increament_5 + "The value of a is: " +
+                        increament_4);
+                    </li>
+                    <li>var decreament_4 = --increament_4;</li>
+                    <li>document.write("The value of a-- is: " + decreament_4 + "The value of a is: " +
+                        decreament_4);
+                    </li>
+                    <li>var decreament_5 = decreament_4--;</li>
+                    <li>document.write("The value of --a is: " + decreament_5 + "The value of a is: " +
+                        decreament_4);
+                    </li>
+                </ul>
+                <button onclick="c6_9ans1()">For Display Click Here</button>
+            </div>
+            <button data-toggle="collapse" data-target="#c6_9ques2"><b>Question#2</b></button>
+            <div class="collapse" id="c6_9ques2">
+                <p>1) What will be the output in variables a, b & result after
+                    execution of the following script:
+                </p>
+                <ul>
+                    <li>var a = 2, b = 1;</li>
+                    <li>var result = --a - --b + ++b + b--;</li>
+                </ul>
+                <p>Explain the output at each stage:</p>
+                <ul>
+                    <li>--a;</li>
+                    <li>--a - --b;</li>
+                    <li>--a - --b + ++b;</li>
+                    <li>--a - --b + ++b + b--;</li>
+                </ul>
+                <p>1) Answer= </p>
+                <ul>
+                    <li>var a = 2, b = 1;</li>
+                    <li>document.write("a is " + a);</li>
+                    <li>document.write("b is " + b);</li>
+                    <li>// var decrea_1 = --a;</li>
+                    <li>// var decrea_2 = --a - --b;</li>
+                    <li>// var decrea_3 = --a - --b + ++b;</li>
+                    <li>var Result_2 = --a - --b + ++b + b--;</li>
+                    <li>document.write("Result is " + Result_2);</li>
+                </ul>
+                <button onclick="c6_9ans2()">For Display Click Here</button>
+            </div>
+            <button data-toggle="collapse" data-target="#c6_9ques3"><b>Question#3</b></button>
+            <div class="collapse" id="c6_9ques3">
+                <p>3) Write a program that takes input a name from user & greet the user.</p>
+                <p>3) Answer= </p>
+                <ul>
+                    <li>var take_user_name = prompt("Your Good Name");</li>
+                    <li>alert("Welcome " + take_user_name);</li>
+                </ul>
+                <button onclick="c6_9ans3()">For Alert Click Here</button>
+            </div>
+            <button data-toggle="collapse" data-target="#c6_9ques4"><b>Question#4</b></button>
+            <div class="collapse" id="c6_9ques4">
+                <p>4) Write a program to take input a number from user &
+                    display it’s multiplication table on your browser. If user
+                    does not enter a new number, multiplication table of 5
+                    should be displayed by default.
+                </p>
+                <p>4) Answer= </p>
+                <ul>
+                    <li>var user_num = +prompt("Enter Number");</li>
+                    <li>if (user_num) {</li>
+                    <li>for (var no = 1; no <= 10; no++) { </li>
+                    <li>document.write(user_num + " x " + no + " = " + user_num * no ) } }</li>
+                    <li>else { for (var no=1; no <=10; no++) { </li>
+                    <li>document.write("5" + " x " + no + " = " + "5" * no) } }</li>
+                </ul>
+                <button onclick="c6_9ans4()">For Alert Click Here</button>
+            </div>
+            <button data-toggle="collapse" data-target="#c6_9ques5"><b>Question#5</b></button>
+            <div class="collapse" id="c6_9ques5">
+                <p>5) </p>
+                <p>5) Answer= </p>
+                <button onclick="c6_9ans5()">For Alert Click Here</button>
+            </div>
+            <!-- <button data-toggle="collapse" data-target="#c6ques1"><b>Question#1</b></button>
+            <div class="collapse" id="c6ques1">
+                <p>1) </p>
+                <p>1) Answer= </p>
+                <button onclick="c6ans1()">For Alert Click Here</button>
+            </div> -->
+        </div>
+        <!-- <button data-toggle="collapse" data-target="#chap4">
+            <h3>Chapter#4 </h3>
+        </button>
+        <div class="collapse" id="chap4">
+            <button>
+                <h3>Question & Answer</h3>
+            </button>
+            <button data-toggle="collapse" data-target="#c4ques1"><b>Question#1</b></button>
+            <div class="collapse" id="c4ques1">
+                <p>1) </p>
+                <p>1) Answer= </p>
+                <button onclick="c4ans1()">For Alert Click Here</button>
+            </div>
+        </div> -->
+    </div>
 </body>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+
 </html>
