@@ -740,3 +740,21 @@ function c14_16ans12() {
     document.write("String" + "<br>" + my_arr_1 + "<br>");
     document.write(refresh);
 }
+// Q13
+function c14_16ans13() {
+    var device = ["Keyboard", "mouse", "printer", "monitor"];
+    document.write("Devices:" + "<br>" + device + "<br>" + "<br>")
+    for (var i = 0; i < device.length; i++) {
+        document.write("Out:" + "<br>" + device[i] + "<br>");
+    }
+}
+// Q14
+function c14_16ans14() {
+    var device = ["Keyboard", "mouse", "printer", "monitor"];
+    document.write("Devices:" + "<br>" + device + "<br>" + "<br>")
+    device.reverse();
+    for (var i = 0; i < device.length; i++) {
+        document.write("Out:" + "<br>" + device[i] + "<br>");
+    }
+}
+Q15
