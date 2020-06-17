@@ -342,7 +342,7 @@ function c6_9ans3() {
     var take_user_name = prompt("Your Good Name");
     alert("Welcome " + take_user_name);
 }
-// Q5
+// Q4
 function c6_9ans4() {
     var user_num = +prompt("Enter Number");
     if (user_num) {
@@ -368,8 +368,11 @@ function c6_9ans4() {
 // Q1
 function c9_11ans1() {
     var city = prompt("Enter your city name:");
-    if (city = "karachi") {
+    if (city === "karachi") {
         alert("Welcome to city of lights");
+    }
+    else {
+        alert("Welcome to " + city);
     }
 }
 // Q2
@@ -591,7 +594,7 @@ function c9_11ans11() {
 // Q2
 function c12_13ans2() {
     var int_1 = +prompt("Enter Value One:");
-    var int_2 = +prompt("Enter Value One:");
+    var int_2 = +prompt("Enter Value Two:");
     if (int_1 >= int_2) {
         alert(int_1 + " is larger")
     }
@@ -699,6 +702,7 @@ function c14_16ans7() {
     for (var i = 0; i < education.length; i++) {
         document.write(i + ") " + education[i] + "<br>");
     }
+    document.write(refresh);
 }
 // Q8
 // var student_name = ["Michael", "John", "Tony"];
@@ -747,6 +751,7 @@ function c14_16ans13() {
     for (var i = 0; i < device.length; i++) {
         document.write("Out:" + "<br>" + device[i] + "<br>");
     }
+    document.write(refresh);
 }
 // Q14
 function c14_16ans14() {
@@ -756,5 +761,5 @@ function c14_16ans14() {
     for (var i = 0; i < device.length; i++) {
         document.write("Out:" + "<br>" + device[i] + "<br>");
     }
+    document.write(refresh);
 }
-Q15

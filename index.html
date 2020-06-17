@@ -690,18 +690,640 @@
                 </ul>
                 <button onclick="c6_9ans4()">For Alert Click Here</button>
             </div>
-            <button data-toggle="collapse" data-target="#c6_9ques5"><b>Question#5</b></button>
-            <div class="collapse" id="c6_9ques5">
-                <p>5) </p>
-                <p>5) Answer= </p>
-                <button onclick="c6_9ans5()">For Alert Click Here</button>
+        </div>
+        <button data-toggle="collapse" data-target="#chap9_11">
+            <h3>Chapter#9 to 11 </h3>
+        </button>
+        <div class="collapse" id="chap9_11">
+            <button>
+                <h3>Question & Answer</h3>
+            </button>
+            <button data-toggle="collapse" data-target="#c9_11ques1"><b>Question#1</b></button>
+            <div class="collapse" id="c9_11ques1">
+                <p>1) Write a program to take “city” name as input from user. If
+                    user enters “Karachi”, welcome the user like this:
+                    “Welcome to city of lights”
+                </p>
+                <p>1) Answer= var city = prompt("Enter your city name:");</p>
+                <ul>
+                    <li>if (city === "karachi") {</li>
+                    <li>alert("Welcome to city of lights");}</li>
+                    <li>else {</li>
+                    <li>alert("Welcome to " + city);}</li>
+                </ul>
+                <button onclick="c9_11ans1()">For Alert Click Here</button>
             </div>
-            <!-- <button data-toggle="collapse" data-target="#c6ques1"><b>Question#1</b></button>
-            <div class="collapse" id="c6ques1">
+            <button data-toggle="collapse" data-target="#c9_11ques2"><b>Question#2</b></button>
+            <div class="collapse" id="c9_11ques2">
+                <p>2) Write a program to take “gender” as input from user. If the
+                    user is male, give the message: Good Morning Sir. If the
+                    user is female, give the message: Good Morning Ma’am.
+                </p>
+                <p>2) Answer= var Gender = prompt("Gender:\nmale or female");</p>
+                <ul>
+                    <li>if (Gender == "male") {</li>
+                    <li>alert("Good Morning Sir.");}</li>
+                    <li>else if (Gender == "female") {</li>
+                    <li>alert("Good Morning Ma'am.");}</li>
+                    <li>else {</li>
+                    <li>alert("Enter Gender male or female.");}</li>
+                </ul>
+                <button onclick="c9_11ans2()">For Alert Click Here</button>
+            </div>
+            <button data-toggle="collapse" data-target="#c9_11ques3"><b>Question#3</b></button>
+            <div class="collapse" id="c9_11ques3">
+                <p>3) Write a program to take input color of road traffic signal
+                    from the user & show the message according to this table:
+                </p>
+                <p>3) Answer= var color = prompt("Enter traffic signal color:\nRed,Yellow or Green\nOnly One");</p>
+                <ul>
+                    <li>if (color == "Red") {</li>
+                    <li>alert("Must Stop.");}</li>
+                    <li>else if (color == "Yellow") {</li>
+                    <li>alert("Ready to Move.");}</li>
+                    <li>else if (color == "Green") {</li>
+                    <li>alert("Move Now.");}</li>
+                    <li>else {</li>
+                    <li>alert("You didn't enter Traffic signal color");}</li>
+                </ul>
+                <button onclick="c9_11ans3()">For Alert Click Here</button>
+            </div>
+            <button data-toggle="collapse" data-target="#c9_11ques4"><b>Question#4</b></button>
+            <div class="collapse" id="c9_11ques4">
+                <p>4) Write a program to take input remaining fuel in car (in
+                    litres) from user. If the current fuel is less than 0.25litres,
+                    show the message “Please refill the fuel in your car”
+                </p>
+                <p>4) Answer= var car_fuel = +prompt("How Many Remaining Fuel In Your Car?\nOnly Enter Number.");</p>
+                <ul>
+                    <li>if (car_fuel < 0.25) {</li>
+                    <li>alert("Please Refill the fuel in your car.");}</li>
+                    <li>else {</li>
+                    <li>alert("Nothing to worry for refill the fuel in your car.")}</li>
+                </ul>
+                <button onclick="c9_11ans4()">For Alert Click Here</button>
+            </div>
+            <button data-toggle="collapse" data-target="#c9_11ques5"><b>Question#5</b></button>
+            <div class="collapse" id="c9_11ques5">
+                <p>5) Run this script, & check whether alert message would be
+                    displayed or not. Record the outputs.
+                </p>
+                <p>5) Answer= 5-A</p>
+                <ul>
+                    <li>var a = 4;</li>
+                    <li>if (++a === 5) {</li>
+                    <li>alert("given condition for variable a is true");}</li>
+                    <li>// dispaly</li>
+                </ul>
+                <button onclick="c9_11ans5_a()">For Alert Click Here</button>
+                <p>5) Answer= 5-B</p>
+                <ul>
+                    <li>var bob = 82;</li>
+                    <li>if (bob++ === 83) {</li>
+                    <li>alert("given condition for variable b is true");}</li>
+                    <li>// not display</li>
+                </ul>
+                <button onclick="c9_11ans5_b()">For Alert Click Here</button>
+                <p>5) Answer= 5-C</p>
+                <ul>
+                    <li>var coo = 12;</li>
+                    <li>if (coo++ === 13) {</li>
+                    <li>alert("condition 1 is true");}</li>
+                    <li>if (coo === 13) {</li>
+                    <li>alert("condition 2 is true");}</li>
+                    <li>if (++coo < 14) {</li>
+                    <li>alert("condition 3 is true");}</li>
+                    <li>if (coo === 14) {</li>
+                    <li>alert("condition 4 is true");}</li>
+                    <li>// display only condition 2 and 4</li>
+                </ul>
+                <button onclick="c9_11ans5_c()">For Alert Click Here</button>
+                <p>5) Answer= 5-D</p>
+                <ul>
+                    <li>var materialCost = 20000;</li>
+                    <li>var laborCost = 2000;</li>
+                    <li>var totalCost = materialCost + laborCost;</li>
+                    <li>if (totalCost === laborCost + materialCost) {</li>
+                    <li>alert("The cost equals");}</li>
+                    <li>// display</li>
+                </ul>
+                <button onclick="c9_11ans5_d()">For Alert Click Here</button>
+                <p>5) Answer= 5-E</p>
+                <ul>
+                    <li>if (true) {</li>
+                    <li>alert("True");}</li>
+                    <li>if (false) {</li>
+                    <li>alert("False");}</li>
+                    <li>// display only true</li>
+                </ul>
+                <button onclick="c9_11ans5_e()">For Alert Click Here</button>
+                <p>5) Answer= 5-F</p>
+                <ul>
+                    <li>if ("car" < "cat" ) {</li>
+                    <li>alert("car is smaller than cat");}</li>
+                    <li>// display</li>
+                </ul>
+                <button onclick="c9_11ans5_f()">For Alert Click Here</button>
+            </div>
+            <button data-toggle="collapse" data-target="#c9_11ques6"><b>Question#6</b></button>
+            <div class="collapse" id="c9_11ques6">
+                <p>6) Write a program to take input the marks obtained in three
+                    subjects & total marks. Compute & show the resulting
+                    percentage on your page. Take percentage & compute
+                    grade as per following table:
+                </p>
+                <p>6) Answer= var subject_1 = +prompt("1)Math\nEnter Your Marks:");</p>
+                <ul>
+                    <li>var subject_2 = +prompt("2)English\nEnter Your Marks:");</li>
+                    <li>var subject_3 = +prompt("3)Chemistry\nEnter Your Marks:");</li>
+                    <li>var marks_obtained = subject_1 + subject_2 + subject_3;</li>
+                    <li>var total_marks = 300;</li>
+                    <li>if (marks_obtained > total_marks) {</li>
+                    <li>alert("Your Entrance Marks is above");}</li>
+                    <li>else {</li>
+                    <li>var percentage_1 = marks_obtained * 100;</li>
+                    <li>var percentage_2 = percentage_1 / total_marks;</li>
+                    <li>document.write("Marks Sheet");</li>
+                    <li>document.write("Total marks : " + total_marks);</li>
+                    <li>document.write("Marks obtained : " + marks_obtained);</li>
+                    <li>document.write("Percentage : " + percentage_2);</li>
+                    <li>if (percentage_2 >= 80) {</li>
+                    <li>document.write("Grade : A-one");</li>
+                    <li>document.write("Remarks : Excellent.");}</li>
+                    <li>else if (percentage_2 >= 70) {</li>
+                    <li>document.write("Grade : A");</li>
+                    <li>document.write("Remarks : Good.");}</li>
+                    <li>else if (percentage_2 >= 60) {</li>
+                    <li>document.write("Grade : b");</li>
+                    <li>document.write("Remarks : You Need To Improve.");}</li>
+                    <li>else if (percentage_2 < 60) {</li>
+                    <li>document.write("Grade : Fail");</li>
+                    <li>document.write("Remarks : Sorry.");}}</li>
+                </ul>
+                <button onclick="c9_11ans6()">For Alert Click Here</button>
+            </div>
+            <button data-toggle="collapse" data-target="#c9_11ques7"><b>Question#7</b></button>
+            <div class="collapse" id="c9_11ques7">
+                <p>7) Store a secret number (ranging from 1 to 10) in a variable.
+                    Prompt user to guess the secret number.
+                    a. If user guesses the same number, show “Bingo! Correct
+                    answer”.
+                    b. If the guessed number +1 is the secret number, show
+                    “Close enough to the correct answer”.
+                </p>
+                <p>7) Answer= var secret_num = 7;</p>
+                <ul>
+                    <li>var guess_num = +prompt("Enter Any Number:\nFrom 1 to 10");</li>
+                    <li>if (guess_num == secret_num) {</li>
+                    <li>alert("Bingo! Correct Answer.")}</li>
+                    <li>else if (guess_num == ++secret_num) {</li>
+                    <li>alert("Close enough to the correct answer.")}</li>
+                    <li>else {</li>
+                    <li>alert("Incorrect Answer.")}</li>
+                </ul>
+                <button onclick="c9_11ans7()">For Alert Click Here</button>
+            </div>
+            <button data-toggle="collapse" data-target="#c9_11ques8"><b>Question#8</b></button>
+            <div class="collapse" id="c9_11ques8">
+                <p>8) Write a program to check whether the given number is
+                    divisible by 3. Show the message to the user if the number
+                    is divisible by 3.
+                </p>
+                <p>8) Answer= var div_num = +prompt("Enter Number:");</p>
+                <ul>
+                    <li>if (div_num % 3 == 0) {</li>
+                    <li>alert("Your Given Number Is Divisible By 3")}</li>
+                    <li>else {</li>
+                    <li>alert("Your Given Number Is Not Divisible By 3")}</li>
+                </ul>
+                <button onclick="c9_11ans8()">For Alert Click Here</button>
+            </div>
+            <button data-toggle="collapse" data-target="#c9_11ques9"><b>Question#9</b></button>
+            <div class="collapse" id="c9_11ques9">
+                <p>9) Write a program that checks whether the given input is an
+                    even number or an odd number.
+                </p>
+                <p>9) Answer= var even_odd = +prompt("Enter Number:");</p>
+                <ul>
+                    <li>if (even_odd % 2 == 0) {</li>
+                    <li>alert("Your Given Number Is Even");}</li>
+                    <li>else {</li>
+                    <li>alert("Your Given Number Is Odd");}</li>
+                </ul>
+                <button onclick="c9_11ans9()">For Alert Click Here</button>
+            </div>
+            <button data-toggle="collapse" data-target="#c9_11ques10"><b>Question#10</b></button>
+            <div class="collapse" id="c9_11ques10">
+                <p>10) Write a program that takes temperature as input and
+                    shows a message based on following criteria
+                </p>
+                <ul>
+                    <li>a. T > 40 then “It is too hot outside.”</li>
+                    <li>b. T > 30 then “The Weather today is Normal.”</li>
+                    <li>c. T > 20 then “Today’s Weather is cool.”</li>
+                    <li>d. T > 10 then “OMG! Today’s weather is so Cool.”</li>
+                </ul>
+                <p>10) Answer= var temperature = +prompt("What is Temperature Outside:");</p>
+                <ul>
+                    <li>if (temperature >= 40) {</li>
+                    <li>alert("It is too hot outside.");}</li>
+                    <li>alert("It is too hot outside.");}</li>
+                    <li>alert("The weather today is normal.");}</li>
+                    <li>else if (temperature >= 20) {</li>
+                    <li>alert("Today's weather is cool.");}</li>
+                    <li>else if (temperature >= 10) {</li>
+                    <li>alert("OMG! Today's weather is so cool.");}</li>
+                </ul>
+                <button onclick="c9_11ans10()">For Alert Click Here</button>
+            </div>
+            <button data-toggle="collapse" data-target="#c9_11ques11"><b>Question#11</b></button>
+            <div class="collapse" id="c9_11ques11">
+                <p>11) Write a program to create a calculator for +,-,*, / & %
+                    using if statements. Take the following input:
+                </p>
+                <ul>
+                    <li>a. First number</li>
+                    <li>b. Second number</li>
+                    <li>c. Operation (+, -, *, /, %)</li>
+                    <li>Compute & show the calculated result to user.</li>
+                </ul>
+                <p>11) Answer= var cal_num1 = +prompt("Enter First Value For Calculate:");</p>
+                <ul>
+                    <li>var cal_opt = prompt("Enter Operator For Calculate:\nOnly = +,-,*,or %");</li>
+                    <li>var cal_num2 = +prompt("Enter Second Value For Calculate:");</li>
+                    <li>if (cal_opt === "+") {</li>
+                    <li>alert(cal_num1 + cal_num2);}</li>
+                    <li>else if (cal_opt === "-") {</li>
+                    <li>alert(cal_num1 - cal_num2);}</li>
+                    <li>else if (cal_opt === "*") {</li>
+                    <li>alert(cal_num1 * cal_num2);}</li>
+                    <li>else if (cal_opt === "%") {</li>
+                    <li>alert(cal_num1 % cal_num2);}</li>
+                </ul>
+                <button onclick="c9_11ans11()">For Alert Click Here</button>
+            </div>
+        </div>
+        <button data-toggle="collapse" data-target="#chap12_13">
+            <h3>Chapter#12 to 13 </h3>
+        </button>
+        <div class="collapse" id="chap12_13">
+            <button>
+                <h3>Question & Answer</h3>
+            </button>
+            <button data-toggle="collapse" data-target="#c12_13ques1"><b>Question#1</b></button>
+            <div class="collapse" id="c12_13ques1">
+                <p>1) Write a program that takes a character (number or string)
+                    in a variable & checks whether the given input is a
+                    number, uppercase letter or lower case letter. (Hint: ASCII
+                    codes:- A=65, Z=90, a=97, z=122).
+                </p>
+                <p>1) Answer= </p>
+                <button onclick="c12_13ans1()">For Alert Click Here</button>
+            </div>
+            <button data-toggle="collapse" data-target="#c12_13ques2"><b>Question#2</b></button>
+            <div class="collapse" id="c12_13ques2">
+                <p>2) Write a JavaScript program that accept two integers and
+                    display the larger. Also show if the two integers are equal.
+                </p>
+                <p>2) Answer= var int_1 = +prompt("Enter Value One:");</p>
+                <ul>
+                    <li>var int_2 = +prompt("Enter Value Two:");</li>
+                    <li>if (int_1 >= int_2) {</li>
+                    <li>alert(int_1 + " is larger")}</li>
+                    <li>else if (int_1 <= int_2) {</li>
+                    <li>alert(int_2 + " is larger" )}</li>
+                </ul>
+                <button onclick="c12_13ans2()">For Alert Click Here</button>
+            </div>
+            <button data-toggle="collapse" data-target="#c12_13ques3"><b>Question#3</b></button>
+            <div class="collapse" id="c12_13ques3">
+                <p>3) Write a program that takes input a number from user &
+                    state whether the number is positive, negative or zero.
+                </p>
+                <p>3) Answer= var int_1 = +prompt("Enter Number");</p>
+                <ul>
+                    <li>if (int_1 > 0) {</li>
+                    <li>alert("Given Number Is Positive.")}</li>
+                    <li>else if (int_1 < 0) {</li>
+                    <li>alert("Given Number Is Negative.")}</li>
+                    <li>else {</li>
+                    <li>alert("Given Number Is Zero.")}</li>
+                </ul>
+                <button onclick="c12_13ans3()">For Alert Click Here</button>
+            </div>
+            <button data-toggle="collapse" data-target="#c12_13ques4"><b>Question#4</b></button>
+            <div class="collapse" id="c12_13ques4">
+                <p>4) Write a program that takes a character (i.e. string of
+                    length 1) and returns true if it is a vowel, false otherwise
+                </p>
+                <p>4) Answer= </p>
+                <button onclick="c12_13ans4()">For Alert Click Here</button>
+            </div>
+            <button data-toggle="collapse" data-target="#c12_13ques5"><b>Question#5</b></button>
+            <div class="collapse" id="c12_13ques5">
+                <p>5) Write a program that</p>
+                <ul>
+                    <li>a. Store correct password in a JS variable.</li>
+                    <li>b. Asks user to enter his/her password</li>
+                    <li>c. Validate the two passwords:</li>
+                    <li>i. Check if user has entered password. If not, then give message “ Please enter your password”
+                    </li>
+                    <li>ii. Check if both passwords are same. If they are
+                        same, show message “Correct! The password you
+                        entered matches the original password”. Show
+                        “Incorrect password” otherwise.
+                    </li>
+                </ul>
+                <p>5) Answer= var take_pass = prompt("Enter Password:");</p>
+                <ul>
+                    <li>var pass_1 = "abdul0987";</li>
+                    <li>if (take_pass == "") {</li>
+                    <li>alert("Please enter your password.")}</li>
+                    <li>else if (take_pass == pass_1) {</li>
+                    <li>alert("Correct! The password you entered matches the original password.")}</li>
+                    <li>else if (take_pass != pass_1) {</li>
+                    <li>alert("Incorrect password.");}</li>
+                </ul>
+                <button onclick="c12_13ans5()">For Alert Click Here</button>
+            </div>
+            <button data-toggle="collapse" data-target="#c12_13ques6"><b>Question#6</b></button>
+            <div class="collapse" id="c12_13ques6">
+                <p>6) This if/else statement does not work. Try to fix it:</p>
+                <ul>
+                    <li>var greeting;</li>
+                    <li>var hour = 13;</li>
+                    <li>if (hour < 18) {</li>
+                    <li>greeting = "Good day";</li>
+                    <li>else</li>
+                    <li>greeting = "Good evening";}</li>
+                </ul>
+                <p>6) Answer= var greeting_1 = "Good day";</p>
+                <ul>
+                    <li>var greeting_2 = "Good evening";</li>
+                    <li>var hour = 13;</li>
+                    <li>if (hour < 18) {</li>
+                    <li>alert(greeting_1);}</li>
+                    <li>else {</li>
+                    <li>alert(greeting_2)}</li>
+                </ul>
+                <button onclick="c12_13ans6()">For Alert Click Here</button>
+            </div>
+            <button data-toggle="collapse" data-target="#c12_13ques7"><b>Question#7</b></button>
+            <div class="collapse" id="c12_13ques7">
+                <p>7) Write a program that takes time as input from user in 24
+                    hours clock format like: 1900 = 7pm. Implement the
+                    following case using if, else & else if statements
+                </p>
+                <p>7) Answer= </p>
+                <button onclick="c12_13ans7()">For Alert Click Here</button>
+            </div>
+        </div>
+        <button data-toggle="collapse" data-target="#chap14_16">
+            <h3>Chapter#14 to 16 </h3>
+        </button>
+        <div class="collapse" id="chap14_16">
+            <button>
+                <h3>Question & Answer</h3>
+            </button>
+            <button data-toggle="collapse" data-target="#c14_16ques1"><b>Question#1</b></button>
+            <div class="collapse" id="c14_16ques1">
+                <p>1) Declare an empty array using JS literal notation to store
+                    student names in future.
+                </p>
+                <p>1) Answer= var student_name = [];</p>
+            </div>
+            <button data-toggle="collapse" data-target="#c14_16ques2"><b>Question#2</b></button>
+            <div class="collapse" id="c14_16ques2">
+                <p>2) Declare an empty array using JS object notation to store
+                    student names in future.
+                </p>
+                <p>2) Answer= var student_name_2 = [{}];</p>
+            </div>
+            <button data-toggle="collapse" data-target="#c14_16ques3"><b>Question#3</b></button>
+            <div class="collapse" id="c14_16ques3">
+                <p>3) Declare and initialize a strings array.</p>
+                <p>3) Answer= var string_array = ["moiz"];</p>
+            </div>
+            <button data-toggle="collapse" data-target="#c14_16ques4"><b>Question#4</b></button>
+            <div class="collapse" id="c14_16ques4">
+                <p>4) Declare and initialize a numbers array.</p>
+                <p>4) Answer= var num_array = [12345];</p>
+            </div>
+            <button data-toggle="collapse" data-target="#c14_16ques5"><b>Question#5</b></button>
+            <div class="collapse" id="c14_16ques5">
+                <p>5) Declare and initialize a boolean array.</p>
+                <p>5) Answer= var bool_arr = [];</p>
+                <ul>
+                    <li>var value = 2;</li>
+                    <li>for (var i = 0; i < value; i++) {</li>
+                    <li>bool_arr.push(false);}</li>
+                    <li>alert(bool_arr);</li>
+                </ul>
+                <button onclick="c14_16ans5()">For Alert Click Here</button>
+            </div>
+            <button data-toggle="collapse" data-target="#c14_16ques6"><b>Question#6</b></button>
+            <div class="collapse" id="c14_16ques6">
+                <p>6) Declare and initialize a mixed array.</p>
+                <p>6) Answer= var mixed_arr = ["moiz", "zubair"];</p>
+                <ul>
+                    <li>var mixed_arr_2 = [</li>
+                    <li>{ moiz: "1", zubair: "2" }]</li>
+                    <li>var string_array = ["moiz"];</li>
+                    <li>var string_array = ["moiz"];</li>
+                    <li>var bool_arr = [];</li>
+                    <li>var value = 2;</li>
+                    <li>for (var i = 0; i < value; i++) {</li>
+                    <li>for (var i = 0; i < value; i++) {</li>
+                    <li>alert(bool_arr);</li>
+                </ul>
+                <button onclick="c14_16ans6()">For Alert Click Here</button>
+            </div>
+            <button data-toggle="collapse" data-target="#c14_16ques7"><b>Question#7</b></button>
+            <div class="collapse" id="c14_16ques7">
+                <p>7) Declare and Initialize an array and store available
+                    education qualifications in Pakistan (e.g. SSC, HSC, BCS,
+                    BS, BCOM, MS, M. Phil., PhD). Show the listed
+                    qualifications in your browser like:
+                </p>
+                <p>7) Answer= var education = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M.Phil", "PhD"];</p>
+                <ul>
+                    <li>document.write("Qualifications:");</li>
+                    <li>for (var i = 0; i < education.length; i++) {</li>
+                    <li>document.write(i + ") " + education[i]);}</li>
+                </ul>
+                <button onclick="c14_16ans7()">For Alert Click Here</button>
+            </div>
+            <button data-toggle="collapse" data-target="#c14_16ques8"><b>Question#8</b></button>
+            <div class="collapse" id="c14_16ques8">
+                <p>8) Write a program to store 3 student names in an array.Take
+                    another array to store score of these three students.
+                    Assume that total marks are 500 for each student, display
+                    the scores & percentages of students like:
+                </p>
+                <p>8) Answer= </p>
+                <button onclick="c14_16ans8()">For Alert Click Here</button>
+            </div>
+            <button data-toggle="collapse" data-target="#c14_16ques9"><b>Question#9</b></button>
+            <div class="collapse" id="c14_16ques9">
+                <p>9) Initialize an array with color names. Display the array
+                    elements in your browser.
+                </p>
+                <ul>
+                    <li>a. Ask the user what color he/she wants to add to the
+                        beginning & add that color to the beginning of the array.
+                        Display the updated array in your browser.
+                    </li>
+                    <li>b. Ask the user what color he/she wants to add to the end
+                        & add that color to the end of the array. Display the
+                        updated array in your browser.
+                    </li>
+                    <li>c. Add two more color to the beginning of the array.
+                        Display the updated array in your browser.
+                    </li>
+                    <li>d. Delete the first color in the array. Display the updated
+                        array in your browser.
+                    </li>
+                    <li>e. Delete the last color in the array. Display the updated
+                        array in your browser.
+                    </li>
+                    <li>f. Ask the user at which index he/she wants to add a color
+                        & color name. Then add the color to desired
+                        position/index. . Display the updated array in your
+                        browser.
+                    </li>
+                    <li>g. Ask the user at which index he/she wants to delete
+                        color(s) & how many colors he/she wants to delete. Then
+                        remove the same number of color(s) from user-defined
+                        position/index. . Display the updated array in your
+                        browser.
+                    </li>
+                </ul>
+                <p>9) Answer= </p>
+                <button onclick="c14_16ans9()">For Alert Click Here</button>
+            </div>
+            <button data-toggle="collapse" data-target="#c14_16ques10"><b>Question#10</b></button>
+            <div class="collapse" id="c14_16ques10">
+                <p>10) Write a program to store student scores in an array &
+                    sort the array in ascending order using Array’s sort
+                    method.
+                </p>
+                <p>10) Answer= var score_student = ["320", "230", "480", "120"];</p>
+                <ul>
+                    <li>document.write("Scores of students: " + score_student);</li>
+                    <li>var order_score = score_student.sort();</li>
+                    <li>document.write("Ordered scores of students: " + order_score);</li>
+                </ul>
+                <button onclick="c14_16ans10()">For Alert Click Here</button>
+            </div>
+            <button data-toggle="collapse" data-target="#c14_16ques11"><b>Question#11</b></button>
+            <div class="collapse" id="c14_16ques11">
+                <p>11) Write a program to initialize an array with city names.
+                    Copy 3 array elements from cities array to selectedCities
+                    array.
+                </p>
+                <p>11) Answer= var cities_list = ["Karachi", "Lahore", "Islamabad", "Quetta", "Peshawar"];</p>
+                <ul>
+                    <li>document.write("Cities List:" + cities_list);</li>
+                    <li>var list_slice = cities_list.slice(2, 4);</li>
+                    <li>document.write("Selected Cities List:" + list_slice);</li>
+                </ul>
+                <button onclick="c14_16ans11()">For Alert Click Here</button>
+            </div>
+            <button data-toggle="collapse" data-target="#c14_16ques12"><b>Question#12</b></button>
+            <div class="collapse" id="c14_16ques12">
+                <p>12) Write a program to create a single string from the
+                    below mentioned array:
+                </p>
+                <p>var arr = [“This ”, “ is ”, “ my ”, “ cat”];</p>
+                <p>(Use array’s join method)</p>
+                <p>12) Answer= var my_arr = ["This", "is", "my", "cat"];</p>
+                <ul>
+                    <li>document.write("Array" + my_arr);</li>
+                    <li>var my_arr_1 = my_arr.join(" ");</li>
+                    <li>document.write("String" + my_arr_1);</li>
+                </ul>
+                <button onclick="c14_16ans12()">For Alert Click Here</button>
+            </div>
+            <button data-toggle="collapse" data-target="#c14_16ques13"><b>Question#13</b></button>
+            <div class="collapse" id="c14_16ques13">
+                <p>13) Create a new array. Store values one by one in such a way
+                    that you can access the values in the order in which they
+                    were stored. (FIFO-First In First Out)
+                </p>
+                <p>13) Answer= var device = ["Keyboard", "mouse", "printer", "monitor"];</p>
+                <ul>
+                    <li>document.write("Devices:" + device)</li>
+                    <li>for (var i = 0; i < device.length; i++) {</li>
+                    <li>document.write("Out:" + device[i]);}</li>
+                </ul>
+                <button onclick="c14_16ans13()">For Alert Click Here</button>
+            </div>
+            <button data-toggle="collapse" data-target="#c14_16ques14"><b>Question#14</b></button>
+            <div class="collapse" id="c14_16ques14">
+                <p>14) Create a new array. Store values one by one in such a way
+                    that you can access the values in reverse order. (Last InFirst Out)
+                </p>
+                <p>14) Answer= var device = ["Keyboard", "mouse", "printer", "monitor"];</p>
+                <ul>
+                    <li>document.write("Devices:" + device)</li>
+                    <li>device.reverse();</li>
+                    <li>for (var i = 0; i < device.length; i++) {</li>
+                    <li>document.write("Out:" + device[i]);}</li>
+                </ul>
+                <button onclick="c14_16ans14()">For Alert Click Here</button>
+            </div>
+            <button data-toggle="collapse" data-target="#c14_16ques15"><b>Question#15</b></button>
+            <div class="collapse" id="c14_16ques15">
+                <p>15) Write a program to store phone manufacturers (Apple,
+                    Samsung, Motorola, Nokia, Sony & Haier) in an array.
+                    Display the following dropdown/select menu in your
+                    browser using document.write() method:
+                </p>
+                <p>15) Answer= </p>
+                <button onclick="c14_16ans15()">For Alert Click Here</button>
+            </div>
+        </div>
+        <button data-toggle="collapse" data-target="#chap17_20">
+            <h3>Chapter#17 to 20 </h3>
+        </button>
+        <div class="collapse" id="chap17_20">
+            <button>
+                <h3>Question & Answer</h3>
+            </button>
+            <button data-toggle="collapse" data-target="#c17_20ques1"><b>Question#1</b></button>
+            <div class="collapse" id="c17_20ques1">
                 <p>1) </p>
                 <p>1) Answer= </p>
-                <button onclick="c6ans1()">For Alert Click Here</button>
-            </div> -->
+                <button onclick="c17_20ans1()">For Alert Click Here</button>
+            </div>
+        </div>
+        <button data-toggle="collapse" data-target="#chap21_25">
+            <h3>Chapter#21 to 25</h3>
+        </button>
+        <div class="collapse" id="chap21_25">
+            <button>
+                <h3>Question & Answer</h3>
+            </button>
+            <button data-toggle="collapse" data-target="#c21_25ques1"><b>Question#1</b></button>
+            <div class="collapse" id="c21_25ques1">
+                <p>1) </p>
+                <p>1) Answer= </p>
+                <button onclick="c21_25ans1()">For Alert Click Here</button>
+            </div>
+        </div>
+        <button data-toggle="collapse" data-target="#chap26_30">
+            <h3>Chapter#26 to 30 </h3>
+        </button>
+        <div class="collapse" id="chap26_30">
+            <button>
+                <h3>Question & Answer</h3>
+            </button>
+            <button data-toggle="collapse" data-target="#c26_30ques1"><b>Question#1</b></button>
+            <div class="collapse" id="c26_30ques1">
+                <p>1) </p>
+                <p>1) Answer= </p>
+                <button onclick="c26_30ans1()">For Alert Click Here</button>
+            </div>
         </div>
         <!-- <button data-toggle="collapse" data-target="#chap4">
             <h3>Chapter#4 </h3>
@@ -717,13 +1339,6 @@
                 <button onclick="c4ans1()">For Alert Click Here</button>
             </div>
         </div> -->
-        <div>
-            <select name="mobile company" id="mobcom">
-                <option value="apple">apple</option>
-                <option value="apple">apple</option>
-                <option value="apple">apple</option>
-            </select>
-        </div>
     </div>
 </body>
 
