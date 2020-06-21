@@ -705,16 +705,17 @@ function c14_16ans7() {
     document.write(refresh);
 }
 // Q8
-// var student_name = ["Michael", "John", "Tony"];
-// var score = ["320", "230", "480"];
-// var total_marks = 500;
-// for (var i = 0; i < student_name.length; i++) {
-//     for (var j = 0; j < score.length; j++) {
-//         var percentage = (score[j] * 100) / total_marks; 
-//         document.write("Score of " + student_name[i] + " is " + score[j] + ".Percentage: " + percentage + "%" + "<br>");
-//     }
-
-// }
+function c14_16ans8() {
+    var student_name = ["Michael", "John", "Tony"];
+    var score = ["320", "230", "480"];
+    var total_marks = 500;
+    for (var i = 0; i < student_name.length; i++) {
+        for (var j = 0; j < score.length; j++) {
+            var percentage = (score[j] * 100) / total_marks;
+            document.write("Score of " + student_name[i] + " is " + score[j] + ".Percentage: " + percentage + "%" + "<br>");
+        }
+    }
+}
 // Q9
 
 
@@ -762,4 +763,110 @@ function c14_16ans14() {
         document.write("Out:" + "<br>" + device[i] + "<br>");
     }
     document.write(refresh);
+}
+// Chapter#17 to 20
+// Q1
+// var multi_arr = [[""],[""]];
+// Q2
+function c17_20ans2() {
+    var multi_arr2 = [["0 1 2 3"], ["1 0 1 2"], ["2 1 0 1"],];
+    var slice_1 = multi_arr2.slice(0, 1);
+    var slice_2 = multi_arr2.slice(1, 2);
+    var slice_3 = multi_arr2.slice(2, 3);
+    document.write(slice_1 + "<br>");
+    document.write(slice_2 + "<br>");
+    document.write(slice_3 + "<br>");
+    document.write(refresh);
+}
+// Q3
+function c17_20ans3() {
+    for (var i = 1; i <= 10; i++) {
+        document.write(i + "<br>");
+    }
+    document.write(refresh);
+}
+// Q4
+function c17_20ans4() {
+    var num1 = +prompt("Enter a number to show its multiplication table");
+    var num2 = +prompt("Enter length multiplication table");
+    document.write("Multiplication table of " + num1 + "<br>" + "Length " + num2 + "<br>" + "<br>");
+    for (var i = 1; i <= num2; i++) {
+        document.write(num1 + " x " + i + " = " + num1 * i + "<br>");
+    }
+    document.write(refresh)
+}
+// Q5
+function c17_20ans5() {
+    var fruits = ["Apple", "Banana", "Mango", "Orange", "Strawberry"];
+    for (var i = 0; i < fruits.length; i++) {
+        document.write(fruits[i] + "<br>");
+    }
+    document.write("<br>");
+    for (var j = 0; j < fruits.length; j++) {
+        document.write("Element at index " + j + " is " + fruits[j] + "<br>")
+    }
+    document.write(refresh);
+}
+// Q6
+function c17_20ans6() {
+    document.write("Counting:" + "<br>");
+    for (var i = 1; i <= 15; i++) {
+        document.write(i + ",")
+    }
+    document.write("<br>" + "Reverse Counting:" + "<br>");
+    for (var j = 10; j >= 1; j--) {
+        document.write(j + ",");
+    }
+    document.write("<br>" + "Even:" + "<br>");
+    for (var k = 0; k <= 20; k = k + 2) {
+        document.write(k + ",");
+    }
+    document.write("<br>" + "Odd:" + "<br>");
+    for (var h = 1; h <= 20; h = h + 2) {
+        document.write(h + ",");
+    }
+    document.write("<br>" + "Series:" + "<br>");
+    for (var t = 2; t <= 20; t = t + 2) {
+        document.write(t + "k" + ",");
+    }
+    document.write(refresh);
+}
+// Q7
+function c17_20ans7() {
+    var user = prompt("Welcome to ABC Bakery.What do you want to order sir/ma'am?");
+    var item = ["cake", "apple pie", "cookie", "chips", "patties"];
+    var matchFound = "no";
+    for (var i = 0; i < item.length; i++) {
+        if (item[i] === user) {
+            matchFound = "yes";
+            document.write(user + " is available at index " + i + " in our Bakery.");
+        }
+    }
+    if (matchFound === "no") {
+        document.write("We are sorry." + user + " is not available in our Bakery.");
+    }
+    document.write("<br>" + refresh);
+}
+// Q8
+function c17_20ans8() {
+    var a = [24, 53, 78, 91, 12];
+    var max = Math.max.apply(null, a);
+    document.write("Array items: " + a + "<br>");
+    document.write("The Largest Number is " + max + "<br>");
+    document.write(refresh);
+}
+// Q9
+function c17_20ans9() {
+    var a = [24, 53, 78, 91, 12];
+    var min = Math.min.apply(null, a);
+    document.write("Array items: " + a + "<br>");
+    document.write("The Smallest Number is " + min + "<br>");
+    document.write(refresh);
+}
+// Q10
+function c17_20ans10() {
+    for (var i = 5; i <= 100; i = i + 5) {
+        document.write(i + ",");
+    }
+    document.write("<br>" + refresh);
 }
